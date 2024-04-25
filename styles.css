@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background: #173368;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 600;
+    color: #fefefe;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.components{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    margin: 25px;
+    text-decoration: none;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: all ease-in-out 300ms;
+}
+.box:hover{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #082335;
+    color: #fff;
+}

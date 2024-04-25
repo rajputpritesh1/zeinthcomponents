@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background: #173368;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 600;
+    color: #fefefe;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.components{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.animated-box{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    margin: 25px;
+    text-decoration: none;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: all ease-in-out 300ms;
+}
+.box:hover{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+.abox{
+    cursor: pointer;
+    margin: 25px;
+    padding: 10px;
+    width: 150px;
+    text-decoration: none;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    transition: all ease-in-out 300ms;
+}
+.abox:hover{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #082335;
+    color: #fff;
+}
+
+/* crazyCool */
+@keyframes crazyCool {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    20% {
+        transform: scale(1.1) rotate(-10deg);
+    }
+    40% {
+        transform: scale(0.9) rotate(10deg);
+    }
+    60% {
+        transform: scale(1.05) rotate(-5deg);
+    }
+    80% {
+        transform: scale(0.95) rotate(5deg);
+    }
+    to {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.animate-crazyCool {
+    animation-name: crazyCool;
+    animation-duration: 1s;
+}
